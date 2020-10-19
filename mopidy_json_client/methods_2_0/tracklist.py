@@ -109,7 +109,7 @@ class TracklistController (MopidyWSController):
         .. deprecated:: 1.0
             The ``tracks`` and ``uri`` arguments. Use ``uris``.
         '''
-        return self.mopidy_request('core.tracklist.add', tracks=tracks, at_position=at_position, uri=uri, uris=uris, **options)
+        return self.mopidy_request('core.tracklist.add', tracks=tracks, at_position=at_position, uris=uris, **options)
 
     def get_eot_tlid(self, **options):
         '''The TLID of the track that will be played after the current track.
